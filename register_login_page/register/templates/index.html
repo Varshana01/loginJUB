@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<style>
+    body{
+        background-color: rgb(163, 227, 239);
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        align-items: center;
+        border: 1px solid black;
+        width: 50%;
+        background-color: beige;
+    }
+    button {
+        background-color: #97e7db; /* Green */
+        border: none;
+        color: white;
+        padding: 5px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px;
+        }
+
+    h1{
+        margin-left: 45%;
+        margin-top: 15%;
+    }
+</style>
+<body>
+    <h1>Welcome</h1>
+    <div class="container">
+        <h5>Please choose an option:</h5>
+        <a href="{% url 'register' %}"><button>Register</button></a>
+        <br>
+        <a href="{% url 'login' %}"><button>Login</button></a>
+    </div>
+    
+</body>
+</html>
